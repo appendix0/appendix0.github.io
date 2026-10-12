@@ -20,11 +20,9 @@ h3 { font-size: var(--text-body); line-height: 1.4; margin: 0 0 var(--space-xs);
 .links span { color: var(--color-muted); }
 .intro-links { justify-content: center; font-size: var(--text-body); margin-top: var(--space-md); }
 section { margin-bottom: 36px; }
-.section-note { margin-top: -4px; margin-bottom: var(--space-lg); }
 .project { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); margin-bottom: 34px; align-items: center; }
 .project-image { display: block; max-width: 340px; width: 100%; }
 .project-image img { display: block; width: 100%; height: auto; object-fit: contain; }
-.project-media { display: grid; gap: var(--space-sm); max-width: 340px; }
 .project-copy { min-width: 0; }
 .project-copy p { margin-bottom: var(--space-sm); }
 .project-copy h3 a { font-weight: 700; }
