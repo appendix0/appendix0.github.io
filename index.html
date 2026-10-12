@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joonsuh Yoon — Mechanical Engineering undergraduate at Yonsei University. Projects and interests in robot learning, autonomous agents, and shared agent memory.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Joonsuh Yoon</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+  <main>
+    <header class="intro">
+      <h1>Joonsuh Yoon</h1>
+      <p>I’m an undergraduate studying Mechanical Engineering at <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a>. I’m interested in <strong>robot learning and autonomous agents</strong> that can operate in open environments over long horizons.</p>
+      <p>I build systems to explore how agents plan, act, and retain useful knowledge. My projects include <a href="#pincercraft">PincerCraft</a>, a Minecraft agent harness, and <a href="#memex">Memex</a>, a shared memory system for AI agents. I’m seeking a research internship to develop my experimental and implementation skills through work with a research team.</p>
+      <p>My long-term motivation is to develop autonomous systems that reduce the need for human labor, with attention to how their benefits are shared.</p>
+      <nav class="links intro-links" aria-label="Profile links">
+        <a href="https://github.com/appendix0">GitHub</a><span aria-hidden="true">/</span>
+        <a href="https://www.linkedin.com/in/%EC%A4%80%EC%84%9C-%EC%9C%A4-532869321/">LinkedIn</a><span aria-hidden="true">/</span>
+        <a href="cv.pdf">CV</a><span aria-hidden="true">/</span>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected Projects</h2>
+      <p class="section-note">Hands-on work in agent execution, evaluation, and persistent knowledge.</p>
+
+      <article class="project" id="pincercraft">
+        <div class="project-media">
+          <a class="project-image" href="assets/pincercraft-artwork.png" aria-label="View PincerCraft artwork at full size">
+            <img src="assets/pincercraft-artwork.png" alt="PincerCraft artwork showing Minecraft characters and small robots against a green background." width="1536" height="1024">
+          </a>
+          <a class="project-image" href="assets/pincercraft-gameplay.png" aria-label="View PincerCraft gameplay screenshot at full size">
+            <img src="assets/pincercraft-gameplay.png" alt="Minecraft gameplay with the agent Daedelus404 discussing storing collected wood in a chest." width="1824" height="1368" loading="lazy">
+          </a>
+        </div>
+        <div class="project-copy">
+          <h3><a href="https://github.com/appendix0/pincercraft">PincerCraft</a></h3>
+          <p class="subtitle">A harness for open-world, long-horizon agents</p>
+          <p class="meta">Independent project · 2026</p>
+          <p>Built on Mindcraft and inspired by Voyager. I developed multistep planning, refreshed world-state feedback, action checks, and an evaluation system around an LLM, reusing the existing action functions.</p>
+          <p>On a fixed 13-task Minecraft benchmark, false completion occurred in <strong>2/52 attempts with the full harness</strong> and <strong>23/51 without its experimental components</strong>, using the same model.</p>
+          <div class="links"><a href="https://github.com/appendix0/pincercraft">Code</a><span aria-hidden="true">/</span><a href="https://github.com/appendix0/pincercraft/blob/HEAD/docs/paper/results.md">Evaluation &amp; limitations</a><span aria-hidden="true">/</span><a href="assets/pincercraft.jpeg">Architecture</a></div>
+        </div>
+      </article>
+
+      <article class="project" id="memex">
+        <a class="project-image" href="assets/memex.jpeg" aria-label="View the Memex Library screenshot at full size">
+          <img src="assets/memex.jpeg" alt="The Memex Library interface, with records connected in an associative knowledge map." width="1873" height="1312" loading="lazy">
+        </a>
+        <div class="project-copy">
+          <h3><a href="https://github.com/appendix0/Memex">Memex</a></h3>
+          <p class="subtitle">Shared memory and associative trails for AI agents</p>
+          <p class="meta">Independent project · 2026</p>
+          <p>Inspired by Vannevar Bush’s <em>As We May Think</em>, I built a shared knowledge system to address context scattered across multiple agents’ separate memories. It preserves findings and associative trails describing how ideas and decisions developed.</p>
+          <p>I use and iterate on it across my ongoing projects, retrieving prior context across agent sessions.</p>
+          <div class="links"><a href="https://github.com/appendix0/Memex">Code</a><span aria-hidden="true">/</span><a href="https://github.com/appendix0/Memex/blob/HEAD/brain/trails/building-the-greenhouse.md">Example trail</a><span aria-hidden="true">/</span><a href="assets/memex.jpeg">Library view</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="experience-title">
+      <h2 id="experience-title">Additional Experience</h2>
+      <div class="entry">
+        <h3>SEF 2026 / ATClink <span class="role">· Project participant</span></h3>
+        <p>Participating in a team project exploring medication-information correspondence across Korea, Vietnam, Nepal, and Uzbekistan, with a focus on informational matching rather than recommendations to substitute medicines.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="entry"><h3>Yonsei University</h3><p>Undergraduate, Mechanical Engineering</p></div>
+      <p class="study"><strong>Independent study:</strong> UC Berkeley CS285, Deep Reinforcement Learning (2023 lecture series and public course materials).</p>
+    </section>
+
+    <section aria-labelledby="awards-title">
+      <h2 id="awards-title">Honors &amp; Awards</h2>
+      <ul class="awards">
+        <li><span class="year">2026</span><span lang="ko">공군창업경진대회 — 입상</span></li>
+        <li><span class="year">2024</span><span lang="ko">인천시대학연합창업경진대회 — 우수상</span></li>
+        <li><span class="year">2024</span><span lang="ko">연세대학교창업지원단 — 입상</span></li>
+      </ul>
+    </section>
+    <footer><p>Layout inspired by <a href="https://jonbarron.info/">Jon Barron</a>. <span class="footer-date">Updated October 2026.</span></p></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joonsuh Yoon — Curriculum Vitae</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main { max-width: 850px; }
+    h1 { text-align: left; margin-bottom: 4px; }
+    h2 { font-size: 18px; border-bottom: 1px solid var(--color-line); padding-bottom: 4px; margin-bottom: 12px; }
+    section { margin-bottom: 24px; }
+    .cv-head { margin-bottom: 24px; }
+    ul { padding-left: 20px; margin: 8px 0 16px; }
+    li { margin-bottom: 5px; }
+    .cv-tools { display: flex; gap: 16px; margin-bottom: 24px; }
+    button { border: 0; padding: 0; background: none; color: var(--color-accent); font: inherit; cursor: pointer; }
+    button:hover { color: var(--color-hover); text-decoration: underline; }
+    button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+    @page { size: A4; margin: 13mm; }
+    @media print { body { font-size: 10pt; line-height: 1.35; } h1 { font-size: 24pt; } h2 { font-size: 12pt; } h3 { font-size: 10pt; } section { margin-bottom: 13px; } .cv-tools { display: none; } .cv-head { margin-bottom: 15px; } li { margin-bottom: 3px; } .meta { font-size: 9pt; } }
+  </style>
+</head>
+<body><main>
+  <nav class="cv-tools" aria-label="CV actions"><a href="index.html">← Website</a><a href="cv.pdf">Download PDF</a><button type="button" onclick="window.print()">Print / Save PDF</button></nav>
+  <header class="cv-head"><h1>Joonsuh Yoon</h1><a href="https://github.com/appendix0">github.com/appendix0</a> · <a href="https://www.linkedin.com/in/%EC%A4%80%EC%84%9C-%EC%9C%A4-532869321/">LinkedIn</a></header>
+  <section><h2>Education</h2><p><strong>Yonsei University</strong> — Undergraduate, Mechanical Engineering</p></section>
+  <section><h2>Research Interests</h2><p>Robot learning; autonomous agents for open-world, long-horizon tasks; memory and knowledge sharing across agents.</p></section>
+  <section><h2>Selected Projects</h2>
+    <h3><a href="https://github.com/appendix0/pincercraft">PincerCraft</a> — Harness engineering for autonomous Minecraft agents</h3><p class="meta">Independent project · 2026</p>
+    <ul><li>Developed a harness on Mindcraft combining multistep planning, refreshed world-state context, action checks, and task-completion verification around an LLM.</li><li>Reused existing action functions while designing orchestration, inventory and progress feedback, and evaluation.</li><li>Evaluated configurations on a fixed 13-task benchmark. False completion occurred in 2/52 full-harness attempts versus 23/51 without its experimental components, with the same model.</li></ul>
+    <h3><a href="https://github.com/appendix0/Memex">Memex</a> — Shared memory and associative trails for AI agents</h3><p class="meta">Independent project · 2026</p>
+    <ul><li>Built a shared knowledge system to address fragmented long-term context across personal and coding agents, inspired by Vannevar Bush’s <em>As We May Think</em>.</li><li>Designed record-selection and associative-trail workflows to preserve findings and the reasoning connecting them.</li><li>Used and iterated on the system across ongoing projects, supporting retrieval of prior context across agent sessions.</li></ul>
+  </section>
+  <section><h2>Additional Experience</h2>
+    <p><strong>SEF 2026 / ATClink — Project participant</strong> · Ongoing<br>Participate in a team project exploring medication-information correspondence across Korea, Vietnam, Nepal, and Uzbekistan.</p>
+  </section>
+  <section><h2>Honors &amp; Awards</h2><ul><li lang="ko">공군창업경진대회 — 입상, 2026</li><li lang="ko">인천시대학연합창업경진대회 — 우수상, 2024</li><li lang="ko">연세대학교창업지원단 — 입상, 2024</li></ul></section>
+  <section><h2>Technical Experience &amp; Independent Study</h2><p>Python implementation of reinforcement-learning algorithms; LLM-agent orchestration; evaluation design; AI product design.</p><p><strong>Independent study:</strong> UC Berkeley CS285: Deep Reinforcement Learning — 2023 lecture series and public course materials.</p></section>
+</main></body></html>

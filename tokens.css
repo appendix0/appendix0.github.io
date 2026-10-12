@@ -1,0 +1,22 @@
+/* Barron-style reference takes precedence over catalog typography. */
+:root {
+  --color-paper: oklch(100% 0 0);
+  --color-ink: oklch(20% 0.006 255);
+  --color-muted: oklch(45% 0.009 255);
+  --color-accent: oklch(48% 0.15 250);
+  --color-hover: oklch(46% 0.13 55);
+  --color-line: oklch(90% 0.003 255);
+  --color-focus: oklch(48% 0.15 250);
+  --font-body: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: var(--font-body);
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --text-small: 14px;
+  --text-body: 16px;
+  --text-section: 23px;
+  --text-name: 34px;
+}

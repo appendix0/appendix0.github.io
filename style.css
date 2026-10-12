@@ -1,0 +1,54 @@
+/* Hallmark · macrostructure: Long Document · tone: austere · anchor hue: blue
+ * Reference: Jon Barron; single-family typography and white paper are deliberate.
+ * Pre-emit critique: P4 H4 E4 S5 R5 V3 */
+@import url('tokens.css');
+* { box-sizing: border-box; }
+html { overflow-x: clip; scroll-padding-top: var(--space-lg); }
+body { margin: 0; overflow-x: clip; background: var(--color-paper); color: var(--color-ink); font: var(--text-body)/1.55 var(--font-body); }
+main { max-width: 820px; margin: 0 auto; padding: var(--space-2xl) var(--space-lg) var(--space-lg); }
+a { color: var(--color-accent); text-decoration: none; }
+a:hover, a:active { color: var(--color-hover); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+p { margin: 0 0 12px; }
+h1, h2, h3 { font-family: var(--font-display); min-width: 0; overflow-wrap: anywhere; }
+h1 { font-size: var(--text-name); font-weight: 400; line-height: 1.2; text-align: center; margin: 0 0 var(--space-lg); }
+h2 { font-size: var(--text-section); font-weight: 400; line-height: 1.25; margin: 0 0 var(--space-md); }
+h3 { font-size: var(--text-body); line-height: 1.4; margin: 0 0 var(--space-xs); }
+.intro { padding: 0 var(--space-sm); margin-bottom: 42px; }
+.links { display: flex; flex-wrap: wrap; gap: 0 var(--space-sm); align-items: baseline; font-size: var(--text-small); }
+.links a { white-space: nowrap; padding-block: 3px; }
+.links span { color: var(--color-muted); }
+.intro-links { justify-content: center; font-size: var(--text-body); margin-top: var(--space-md); }
+section { margin-bottom: 36px; }
+.section-note { margin-top: -4px; margin-bottom: var(--space-lg); }
+.project { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); margin-bottom: 34px; align-items: center; }
+.project-image { display: block; max-width: 340px; width: 100%; }
+.project-image img { display: block; width: 100%; height: auto; object-fit: contain; }
+.project-media { display: grid; gap: var(--space-sm); max-width: 340px; }
+.project-copy { min-width: 0; }
+.project-copy p { margin-bottom: var(--space-sm); }
+.project-copy h3 a { font-weight: 700; }
+.subtitle { font-style: italic; }
+.meta { color: var(--color-muted); font-size: var(--text-small); }
+.entry { margin-bottom: var(--space-md); }
+.entry p { margin: 0; }
+.role { font-weight: 400; }
+.study { margin-top: var(--space-md); }
+.awards { list-style: none; padding: 0; margin: 0; }
+.awards li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: var(--space-md); margin-bottom: var(--space-sm); }
+.year { font-variant-numeric: tabular-nums; color: var(--color-muted); }
+.muted { color: var(--color-muted); }
+footer { border-top: 1px solid var(--color-line); margin-top: var(--space-2xl); padding-top: var(--space-md); text-align: right; color: var(--color-muted); font-size: var(--text-small); }
+footer a, .footer-date { white-space: nowrap; }
+.skip { position: absolute; top: -80px; left: var(--space-md); padding: var(--space-sm); background: var(--color-paper); }
+.skip:focus { top: var(--space-sm); }
+@media (min-width: 40rem) {
+  .project { grid-template-columns: 200px minmax(0, 1fr); gap: var(--space-lg); }
+  main { padding-top: 52px; }
+}
+@media print {
+  main { max-width: none; padding: 0; }
+  .skip, footer { display: none; }
+  .project, .entry { break-inside: avoid; }
+  a { color: var(--color-ink); }
+}
