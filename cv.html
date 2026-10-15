@@ -1,40 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joonsuh Yoon — Curriculum Vitae</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    main { max-width: 850px; }
-    h1 { text-align: left; margin-bottom: 4px; }
-    h2 { font-size: 18px; border-bottom: 1px solid var(--color-line); padding-bottom: 4px; margin-bottom: 12px; }
-    section { margin-bottom: 24px; }
-    .cv-head { margin-bottom: 24px; }
-    ul { padding-left: 20px; margin: 8px 0 16px; }
-    li { margin-bottom: 5px; }
-    .cv-tools { display: flex; gap: 16px; margin-bottom: 24px; }
-    button { border: 0; padding: 0; background: none; color: var(--color-accent); font: inherit; cursor: pointer; }
-    button:hover { color: var(--color-hover); text-decoration: underline; }
-    button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
-    @page { size: A4; margin: 13mm; }
-    @media print { body { font-size: 10pt; line-height: 1.35; } h1 { font-size: 24pt; } h2 { font-size: 12pt; } h3 { font-size: 10pt; } section { margin-bottom: 13px; } .cv-tools { display: none; } .cv-head { margin-bottom: 15px; } li { margin-bottom: 3px; } .meta { font-size: 9pt; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joonsuh Yoon — Curriculum Vitae</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; color: #171717; background: #fff; font: 10pt/1.2 Arial, sans-serif; }
+  main { max-width: 184mm; margin: 12mm auto; }
+  h1 { font-size: 23pt; line-height: 1.15; margin: 0 0 5pt; }
+  h2 { font-size: 11pt; margin: 8pt 0 4pt; padding-bottom: 3pt; border-bottom: .6pt solid #777; }
+  h3 { font-size: 10pt; margin: 5pt 0 2pt; }
+  p { margin: 0 0 3pt; }
+  a { color: #145580; text-decoration: none; }
+  ul { margin: 2pt 0 4pt; padding-left: 14pt; }
+  li { margin: 0 0 2pt; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 14pt; }
+  .date { white-space: nowrap; font-weight: normal; }
+  .muted { color: #444; }
+  .project, .entry { break-inside: avoid; }
+  .awards { list-style: none; padding: 0; }
+  .awards li { display: flex; justify-content: space-between; gap: 12pt; }
+  @page { size: A4; margin: 12mm 13mm; }
+  @media print { main { margin: 0; max-width: none; } a { color: inherit; } }
+  @media screen and (max-width: 700px) { main { margin: 20px; } .row { flex-wrap: wrap; gap: 2pt; } }
+  .cv-tools { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
+  .cv-tools button { border: 0; padding: 0; background: none; color: #145580; font: inherit; cursor: pointer; }
+  @media print { .cv-tools { display: none; } }
+</style>
 </head>
 <body><main>
-  <nav class="cv-tools" aria-label="CV actions"><a href="index.html">← Website</a><a href="cv.pdf">Download PDF</a><button type="button" onclick="window.print()">Print / Save PDF</button></nav>
-  <header class="cv-head"><h1>Joonsuh Yoon</h1><a href="https://github.com/appendix0">github.com/appendix0</a> · <a href="https://www.linkedin.com/in/%EC%A4%80%EC%84%9C-%EC%9C%A4-532869321/">LinkedIn</a></header>
-  <section><h2>Education</h2><p><strong>Yonsei University</strong> — Undergraduate, Mechanical Engineering</p></section>
-  <section><h2>Research Interests</h2><p>I am broadly interested in artificial intelligence, particularly robot learning, control, and simulation, with the long-term vision of building intelligent machines that can perform a wide range of tasks autonomously in the real world.</p></section>
-  <section><h2>Selected Projects</h2>
-    <h3><a href="https://github.com/appendix0/pincercraft">PincerCraft</a> — Planning and execution of LLM agents in Minecraft</h3><p class="meta">Independent project · 2026</p>
-    <ul><li>Implemented multistep planning, state feedback, action checks, and task-completion verification on Mindcraft, using existing language models and action functions.</li><li>Developed an evaluation system to compare agent configurations on 13 Minecraft tasks.</li><li>Observed false completion in 2 of 52 attempts with the full harness and 23 of 51 with its experimental components removed, using the same language model.</li></ul>
-    <h3><a href="https://github.com/appendix0/Memex">Memex</a> — Shared memory and associative trails for AI agents</h3><p class="meta">Independent project · 2026</p>
-    <ul><li>Developed a shared memory system to address context fragmented across multiple agents, inspired by Vannevar Bush’s <em>As We May Think</em>.</li><li>Implemented workflows for selecting records and connecting them through associative trails that document ideas and decisions.</li><li>Used and refined the system across personal projects over several months to retrieve context from earlier agent sessions.</li></ul>
-  </section>
-  <section><h2>Additional Experience</h2>
-    <p><strong><a href="https://github.com/TurtleTurtleTurtleNeck/Jarada">TTNK / Jarada</a> — Product design and development</strong> · 2026<br>Contributed to the design and development of a wearable device for posture feedback. The team received an award in the 2026 ROKAF startup competition.</p>
-    <p><strong>ATClink — Social Engagement Fund (SEF) 2026</strong> · Project participant<br>Program organized by Yonsei University’s Institute for Global Engagement and Empowerment (IGEE). Participate in a team project investigating ways to link medication information across Korea, Vietnam, Nepal, and Uzbekistan.</p>
-  </section>
-  <section><h2>Honors &amp; Awards</h2><ul><li lang="ko">공군창업경진대회 — 입상, 2026 · TTNK</li><li lang="ko">인천시대학연합창업경진대회 — 우수상, 2024</li><li lang="ko">연세대학교창업지원단 — 입상, 2024</li></ul></section>
-  <section><h2>Technical Experience &amp; Independent Study</h2><p>Implementation of reinforcement-learning algorithms in Python; development and evaluation of LLM agent systems; AI product design.</p><p><strong>Independent study:</strong> UC Berkeley CS285: Deep Reinforcement Learning — 2023 lecture series and public course materials.</p></section>
+<nav class="cv-tools" aria-label="CV actions"><a href="index.html">← Website</a><a href="cv.pdf">Download PDF</a><button type="button" onclick="window.print()">Print / Save PDF</button></nav>
+<header>
+  <h1>Joonsuh Yoon</h1>
+  <p><a href="https://appendix0.github.io/">appendix0.github.io</a> &nbsp;·&nbsp; <a href="https://github.com/appendix0">github.com/appendix0</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/%EC%A4%80%EC%84%9C-%EC%9C%A4-532869321/">LinkedIn</a></p>
+</header>
+
+<section>
+  <h2>Education &amp; Affiliations</h2>
+  <p><strong>Yonsei University</strong> — Undergraduate, Mechanical Engineering<br>GPA: <strong>3.61 / 4.30</strong> · Currently on leave for military service</p>
+  <p><strong>Republic of Korea Air Force</strong> — Enlisted service, Seoul Air Base, Mar 2025–present<br>Expected discharge: December 9, 2026</p>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <p>I am particularly interested in bringing AI agents into the real world through robotics. I aim to study how reinforcement learning can enable robots to acquire skills and operate autonomously in complex, open-ended environments.</p>
+</section>
+
+<section>
+  <h2>Relevant Coursework &amp; Research Preparation</h2>
+  <p><strong>UC Berkeley CS285: Deep Reinforcement Learning — Independent study</strong><br>Completed the course and all homework assignments using the publicly available 2023 lectures and course materials. Worked through reinforcement-learning implementations within the provided homework codebases.</p>
+  <p><strong>Paper reading:</strong> Studied SkiMo, DreamSmooth, HumanoidBench, and other papers from SRL’s recommended reading list.</p>
+</section>
+
+<section>
+  <h2>Selected Projects</h2>
+  <div class="project">
+    <h3 class="row"><span><a href="https://github.com/appendix0/pincercraft">PincerCraft</a> — LLM agent planning and evaluation in Minecraft</span><span class="date">May 2026</span></h3>
+    <p class="muted">Independent project</p>
+    <ul>
+      <li>Implemented multistep planning, state feedback, action checks, and task-completion verification on Mindcraft, using existing large language models and action functions.</li>
+      <li>Developed an evaluation system comparing agent configurations on 13 Minecraft tasks. With the same model, false completion—claiming completion without meeting task criteria—occurred in 2/52 attempts with the full harness and 23/51 with its experimental components removed.</li>
+    </ul>
+  </div>
+  <div class="project">
+    <h3 class="row"><span><a href="https://github.com/appendix0/Memex">Memex</a> — Shared memory and associative trails for AI agents</span><span class="date">Aug 2026</span></h3>
+    <p class="muted">Independent project</p>
+    <ul>
+      <li>Developed a shared knowledge library to address context fragmented across multiple agents, inspired by Vannevar Bush’s <em>As We May Think</em>.</li>
+      <li>Implemented record-selection and associative-trail workflows to connect findings and decisions; used and refined the system across personal projects over several months.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Additional Project Experience</h2>
+  <div class="entry">
+    <h3 class="row"><span><a href="https://github.com/TurtleTurtleTurtleNeck/Jarada">TTNK / Jarada</a> — Product design and development</span><span class="date">Jun–Aug 2026</span></h3>
+    <p>Contributed to the design and development of a wearable device for posture feedback. The team received an award in the Republic of Korea Air Force startup competition.</p>
+  </div>
+  <div class="entry">
+    <h3 class="row"><span>Social Engagement Fund (SEF), Project participant — ATClink</span><span class="date">Oct 2026–present</span></h3>
+    <p>Participate in a team project linking medication information across Korea, Vietnam, Nepal, and Uzbekistan through SEF, organized by Yonsei University’s Institute for Global Engagement and Empowerment (IGEE).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical &amp; Language Skills</h2>
+  <p><strong>Python / PyTorch:</strong> Foundational experience through CS285 assignments; able to read and understand the structure of the course’s reinforcement-learning code and training workflows.</p>
+  <p><strong>English:</strong> TOEIC 950/990 (August 2023). Comfortable reading and interpreting research papers in English without translation.</p>
+</section>
+
+<section>
+  <h2>Honors &amp; Awards</h2>
+  <ul class="awards">
+    <li><span>Republic of Korea Air Force Startup Competition — Award recipient (TTNK)</span><span class="date">Aug 2026</span></li>
+    <li><span>Incheon Inter-University Startup Competition — Excellence Award</span><span class="date">Sep 2024</span></li>
+    <li><span>Yonsei University Startup Support Foundation Competition — Award recipient</span><span class="date">Aug 2024</span></li>
+  </ul>
+</section>
 </main></body></html>

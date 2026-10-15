@@ -33,7 +33,7 @@ section { margin-bottom: 36px; }
 .role { font-weight: 400; }
 .study { margin-top: var(--space-md); }
 .awards { list-style: none; padding: 0; margin: 0; }
-.awards li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: var(--space-md); margin-bottom: var(--space-sm); }
+.awards li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: var(--space-md); margin-bottom: var(--space-sm); }
 .year { font-variant-numeric: tabular-nums; color: var(--color-muted); }
 .muted { color: var(--color-muted); }
 footer { border-top: 1px solid var(--color-line); margin-top: var(--space-2xl); padding-top: var(--space-md); text-align: right; color: var(--color-muted); font-size: var(--text-small); }
